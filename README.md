@@ -18,6 +18,10 @@
 - 支持高德地图 API 增强解析精度（可选）
 - 支持 Java 8+
 
+## 在线演示
+
+👉 [https://lqiuqiuzi.github.io/address-parse-vue/](https://lqiuqiuzi.github.io/address-parse-vue/)
+
 ## 安装
 
 ### Maven
@@ -109,10 +113,11 @@ AddressResult result = AddressParse.parse(address, gdKey);
 
 [MIT License](LICENSE)
 
-## 致谢
+## 相关项目
 
-本项目基于 [address-parse](https://github.com/hwj911327/address-parse) PHP 版本移植。
+- [address-parse-vue](https://github.com/Lqiuqiuzi/address-parse-vue) - vue 版本
 
-## 贡献
+## 联系方式
 
-欢迎提交 Issue 和 Pull Request！
+**企鹅** 2177273545
+**卫星** l3885236283
