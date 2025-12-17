@@ -15,20 +15,35 @@
 
 ## 安装
 
-### Maven
+### Maven (通过 JitPack)
 
 ```xml
-<dependency>
-    <groupId>io.github.Lqiuqiuzi</groupId>
-    <artifactId>address-parse</artifactId>
-    <version>1.0.0</version>
-</dependency>
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.github.Lqiuqiuzi</groupId>
+        <artifactId>address-parse-java</artifactId>
+        <version>v1.0.0</version>
+    </dependency>
+</dependencies>
 ```
 
-### Gradle
+### Gradle (通过 JitPack)
 
 ```groovy
-implementation 'io.github.Lqiuqiuzi:address-parse:1.0.0'
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.Lqiuqiuzi:address-parse-java:v1.0.0'
+}
 ```
 
 ## 使用方法
