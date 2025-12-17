@@ -1,5 +1,9 @@
 # Address Parse Java
 
+[![](https://jitpack.io/v/Lqiuqiuzi/address-parse-java.svg)](https://jitpack.io/#Lqiuqiuzi/address-parse-java)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Java](https://img.shields.io/badge/Java-8%2B-blue.svg)](https://www.java.com)
+
 中国收货地址智能解析 Java 版本
 
 将连在一起的收货信息解析成单个信息，方便录入系统。解析成功率保持在 99% 以上。
@@ -12,10 +16,11 @@
 - 解析邮政编码
 - 解析省市区三级地址
 - 支持高德地图 API 增强解析精度（可选）
+- 支持 Java 8+
 
 ## 安装
 
-### Maven (通过 JitPack)
+### Maven
 
 ```xml
 <repositories>
@@ -29,12 +34,12 @@
     <dependency>
         <groupId>com.github.Lqiuqiuzi</groupId>
         <artifactId>address-parse-java</artifactId>
-        <version>v1.0.0</version>
+        <version>v1.0.4</version>
     </dependency>
 </dependencies>
 ```
 
-### Gradle (通过 JitPack)
+### Gradle
 
 ```groovy
 repositories {
@@ -42,7 +47,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.Lqiuqiuzi:address-parse-java:v1.0.0'
+    implementation 'com.github.Lqiuqiuzi:address-parse-java:v1.0.4'
 }
 ```
 
@@ -54,7 +59,7 @@ dependencies {
 import io.github.addressparse.AddressParse;
 import io.github.addressparse.model.AddressResult;
 
-String address = "身份证号：51250119910927226x 收货地址张三收货地址：成都市武侯区美领馆路11号附2号 617000 136-3333-6666";
+String address = "张三 13812345678 北京市朝阳区建国路88号 100022";
 AddressResult result = AddressParse.parse(address);
 
 System.out.println("姓名: " + result.getName());
@@ -78,25 +83,36 @@ AddressResult result = AddressParse.parse(address, gdKey);
 
 ```
 姓名: 张三
-手机: 13633336666
-身份证: 51250119910927226X
-邮编: 617000
-省份: 四川省
-城市: 成都市
-区县: 武侯区
-详细地址: 美领馆路11号附2号
+手机: 13812345678
+身份证: 
+邮编: 100022
+省份: 北京市
+城市: 北京城区
+区县: 朝阳区
+详细地址: 建国路88号
 ```
 
-## 构建
+## 支持的输入格式
 
-```bash
-mvn clean package
+支持空格、逗号、回车等多种分隔符：
+
+```
+张三 13812345678 北京市朝阳区xxx
+张三,13812345678,北京市朝阳区xxx
+张三，13812345678，北京市朝阳区xxx
+张三
+13812345678
+北京市朝阳区xxx
 ```
 
 ## 许可证
 
-MIT License
+[MIT License](LICENSE)
 
 ## 致谢
 
 本项目基于 [address-parse](https://github.com/hwj911327/address-parse) PHP 版本移植。
+
+## 贡献
+
+欢迎提交 Issue 和 Pull Request！
