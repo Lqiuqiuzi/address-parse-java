@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.yourusername</groupId>
+    <groupId>io.github.Lqiuqiuzi</groupId>
     <artifactId>address-parse</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>Address Parse</name>
     <description>中国收货地址智能解析，支持身份证号、电话、省市区街道地址解析</description>
-    <url>https://github.com/yourusername/address-parse-java</url>
+    <url>https://github.com/Lqiuqiuzi/address-parse-java</url>
 
     <licenses>
         <license>
@@ -28,9 +28,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/yourusername/address-parse-java.git</connection>
-        <developerConnection>scm:git:ssh://github.com:yourusername/address-parse-java.git</developerConnection>
-        <url>https://github.com/yourusername/address-parse-java</url>
+        <connection>scm:git:git://github.com/Lqiuqiuzi/address-parse-java.git</connection>
+        <developerConnection>scm:git:ssh://github.com:Lqiuqiuzi/address-parse-java.git</developerConnection>
+        <url>https://github.com/Lqiuqiuzi/address-parse-java</url>
     </scm>
 
     <properties>

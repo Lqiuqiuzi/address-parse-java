@@ -19,7 +19,7 @@
 
 ```xml
 <dependency>
-    <groupId>io.github.yourusername</groupId>
+    <groupId>io.github.Lqiuqiuzi</groupId>
     <artifactId>address-parse</artifactId>
     <version>1.0.0</version>
 </dependency>
@@ -28,7 +28,7 @@
 ### Gradle
 
 ```groovy
-implementation 'io.github.yourusername:address-parse:1.0.0'
+implementation 'io.github.Lqiuqiuzi:address-parse:1.0.0'
 ```
 
 ## 使用方法
